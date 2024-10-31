@@ -1,3 +1,6 @@
+from temperature_conversion import temperature_conversion
+from weight_conversion import weight_conversion
+
 def menu():
     print("Welcome to the Unit Converter")
     print("Select an option:")
@@ -38,8 +41,10 @@ def main():
             length_conversion()
         elif option == "2":
             print("\n--- Temperature Conversion ---")
+            temperature_conversion()
         elif option == "3":
             print("\n--- Weight Conversion ---")
+            weight_conversion()
         elif option == "4":
             print("Thank you for using the Unit Converter. Goodbye!")
             break
